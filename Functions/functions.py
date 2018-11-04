@@ -100,7 +100,7 @@ def decide_route(fastest_orbit,fastest_vehicle):
 
 	if(fastest_orbit in orbit_list1):
 		dest1="Hallitharam"
-		dest2="R K Puram"
+		dest2="RK Puram"
 		orbit2=4
 	else:
 		dest1="R K Puram"
