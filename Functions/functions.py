@@ -39,7 +39,6 @@ def fastest_vehicle(orbits,orbit_speed,vehicles,weather):
 	is then stored onto a list,sorted and passed to print_the_fastest() to
 	resolve disputes in case of same min_time of more than one vehicle.
 	'''
-	print(orbit_speed)
 	orbit_speed=orbit_speed[::-1]
 
 	crater_percentage=weather.get_details()#to find the actual number of craters
@@ -48,7 +47,7 @@ def fastest_vehicle(orbits,orbit_speed,vehicles,weather):
 	orbit_number=0
 
 	last_orbit_object=orbits.pop(-1)
-	for x in orbits:#iterate through the three orbits(1,2,3)
+	for x in orbits:#iterate through the three orbits(1,2,3). We don't need to calc with orbit4
 		distance,craters=x.get_details()
 		craters=craters+(craters*crater_percentage)#increase or decrease no based on weather
 				
@@ -89,3 +88,23 @@ def vehicles_allowed(weather):
 		return('TukTuk','Car')
 	elif(weather=='Windy'):
 		return('Bike','Car')
+
+def decide_route(fastest_orbit,fastest_vehicle):
+	'''
+	A simple function to calculate dest1 and dest2
+	and which orbit to choose first and which to choose 
+	second. The second choice for an orbit will always be 
+	orbit4
+	'''
+	orbit_list1=[1,2]
+
+	if(fastest_orbit in orbit_list1):
+		dest1="Hallitharam"
+		dest2="R K Puram"
+		orbit2=4
+	else:
+		dest1="R K Puram"
+		dest2="Hallitharam"
+		orbit2=4
+
+	return(dest1,dest2,orbit2)

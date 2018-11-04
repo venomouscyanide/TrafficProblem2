@@ -1,10 +1,11 @@
-#Set3Problem1
+#Set3Problem2
 from Classes.vehicle import vehicle
 from Classes.weather import weather
 from Classes.orbit import orbit
 from Functions.functions import print_the_fastest
 from Functions.functions import fastest_vehicle
 from Functions.functions import vehicles_allowed
+from Functions.functions import decide_route
 
 if __name__ == '__main__':
 	'''
@@ -97,6 +98,11 @@ if __name__ == '__main__':
 	
 	'''
 	finally print the fastest vehicle in which orbit number
+	and the starting and ending destinations
+	along with the first chosen orbit number and the 
+	second chosen orbit number
 	'''
-	print("Vehicle {vehicle} on Orbit{orbit_no}".format(vehicle=fastest_vehicle,orbit_no=fastest_orbit))
+	dest1,dest2,orbit2=decide_route(fastest_orbit,fastest_vehicle)
+	print("Vehicle {vehicle} to {dest1} via Orbit{orbit_no1} and {dest2} via Orbit{orbit_no2}".
+		format(vehicle=fastest_vehicle,dest1=dest1,orbit_no1=fastest_orbit,dest2=dest2,orbit_no2=orbit2))
 	

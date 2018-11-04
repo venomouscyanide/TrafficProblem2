@@ -1,9 +1,9 @@
 # Traffic Problem
-Solution to the traffic problem1 on geektrust.in
-Set3Problem1
+Solution to the traffic problem2 on geektrust.in
+Set3Problem2
 
 ## Problem Statement
-Go to problem 1 on the link:
+Go to problem 2 on the link:
 https://www.geektrust.in/coding-problem/backend/traffic
 
 ## Assumptions
@@ -11,6 +11,7 @@ https://www.geektrust.in/coding-problem/backend/traffic
 1.The weathers,orbits and vehicles have to be initialized as per problem 
 2.The vehicles in each weather need to be mentioned in the respective function
 3.The rule to select which vehicle in case of many vehicle with the same time need to be mentioned as well
+$.The rule to list out the starting and ending cities/orbits have to be coded as per req
 ```
 ## Usage
 ```
