@@ -1,4 +1,6 @@
 # Traffic Problem
+(OBSOLETE,MERGED WITH TRAFFIC PROBLEM REPO) \
+Refer https://github.com/venomouscyanide/TrafficProblem \
 Solution to the traffic problem2 on geektrust.in
 Set3Problem2
 
